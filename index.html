@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TopGear</title>
+        <script src="script.js" ></script>
+    </head>
+    <body>
+      
+        
+        <button type="button" onclick="clickMe()">Donate for a cause</button>
+        <br><br><br><br><br><br><br><br><br><br>
+        <p>Simple Calculator</p>
+        <table style="background-color: darkcyan">
+            <tr>
+                <td><button style="width: 30px" id="no1" onclick="createNumber('1')" >1</button></td>
+                <td><button style="width: 30px" id="no2" onclick="createNumber('2')" >2</button></td>
+                <td><button style="width: 30px" id="no3" onclick="createNumber('3')" >3</button></td>
+                <td><button style="width: 30px" id="plus" onclick="calculateWith('+')" >+</button></td>
+            </tr>
+            <tr>
+                <td><button style="width: 30px" id="no4"  onclick="createNumber('4')" >4</button></td>
+                <td><button style="width: 30px" id="no5"  onclick="createNumber('5')">5</button></td>
+                <td><button style="width: 30px" id="no6" onclick="createNumber('6')" >6</button></td>
+                <td><button style="width: 30px" id="minus" onclick="calculateWith('-')" >-</button></td>
+            </tr>
+            <tr>
+                <td><button style="width: 30px" id="no7" onclick="createNumber('7')" >7</button></td>
+                <td><button style="width: 30px" id="no8" onclick="createNumber('8')" >8</button></td>
+                <td><button style="width: 30px" id="no9" onclick="createNumber('9')" >9</button></td>
+                <td><button style="width: 30px" id="divide" onclick="calculateWith('/')" >/</button></td>
+            </tr>
+            <tr>
+                <td><button style="width: 30px" id="no0" onclick="createNumber('0')" >0</button></td>
+                <td><button style="width: 30px" id="reset" onclick="resetNo()" >C</button></td>
+                <td><button style="width: 30px" id="equal" onclick="calculateWith('=')">=</button></td>
+                <td><button style="width: 30px" id="multiply" onclick="calculateWith('*')" >*</button></td>
+            </tr>
+        </table>
+        
+        <br><br><br><br><br><br><br><br><br><br>
+        
+        <p>Enter array</p>
+        <table style="background-color: darkcyan">
+            <tr>
+                <td><input type=text id="array" placeholder="elements of aray"> </td>
+                <td><input type=text id="elements" placeholder="return elements"> </td>
+                <td><button style="width: 100px" id="no2" onclick="getLastElements()" >Send</button></td>
+            </tr>
+            <tr>
+                <td><p id="outputArray"></p></td>
+            </tr>
+        </table>
+    </body>
+</html>
